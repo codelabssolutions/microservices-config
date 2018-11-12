@@ -39,9 +39,9 @@ spring:
 # Datasource and JPA configuration to be used for storing the OAuth authorization details
 # and token store
   datasource:
-    url: jdbc:mysql://mysqldb:3306/auth
+    url: jdbc:mysql://mysqldb:3307/auth
     username: root
-    password: password
+    password: root
     driver-class: com.mysql.jdbc.Driver
 
   jpa:
