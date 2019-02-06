@@ -42,8 +42,8 @@ security:
     password: none
   oauth2:
     client:
-      accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
-      userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
+      accessTokenUri: http://103.21.53.12:${authserver.port}/${authserver.contextPath}/oauth/token
+      userAuthorizationUri: http://103.21.53.12:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
       registered-redirect-uri: http://103.21.53.12:8765/login
@@ -82,7 +82,7 @@ zuul:
     user:
       path: /api/loggedinuser/**
       stripPrefix: true
-      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/
+      url: http://103.21.53.12:${authserver.port}/${authserver.contextPath}/
     ui:
       path: /**
       stripPrefix: false
